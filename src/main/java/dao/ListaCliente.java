@@ -1,5 +1,5 @@
 package dao;
-/*probando*/
+/*probandos*/
 import dto.Cliente;
 import java.util.LinkedList;
 
