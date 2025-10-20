@@ -30,6 +30,8 @@ public class ListaCliente {
         //return lista.
         return null;
     }
+    public Cliente anterior(){
+    }
     public String imprimir(){
         String resultado="";
         for (Cliente cliente : lista) {
@@ -47,5 +49,7 @@ public class ListaCliente {
         l.agregar(c1);
         l.agregar(c2);
         System.out.println(l.imprimir());
+        l.ultimo();
+        Cliente cx=l.anterior();
     }
 }
