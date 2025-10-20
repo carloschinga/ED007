@@ -18,11 +18,13 @@ public class PilaCliente {
     
     public void apilar(Cliente c) {
         pilaCliente.push(c);
-        System.out.println("Cliente apilado: " + c.getNombClie());
+        System.out.println("Se apilo el cliente: " + c.getNombClie());
     }
     
     public Cliente cima(){
-        return pilaCliente.peek();
+      Cliente cima = pilaCliente.peek(); 
+      System.out.println("La cima es: " + cima.getNombClie()); 
+      return cima;
     }
     
     public static void main(String[] args) {
@@ -36,7 +38,7 @@ public class PilaCliente {
 
         pila.apilar(c1);
         pila.apilar(c2);
-
+        pila.cima();
     }
     
 }
