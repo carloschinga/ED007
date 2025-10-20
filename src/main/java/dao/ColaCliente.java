@@ -19,10 +19,17 @@ public class ColaCliente {
     public void agregar(Cliente c){
         colaCliente.add(c);
     }
-    public Cliente quitar(c);{
-        colaCliente.poll();
+        public Cliente quitar() {
+        if (!colaCliente.isEmpty()) {
+            Cliente eliminado = colaCliente.poll();
+            System.out.println("Se desencoló el cliente: " + eliminado.getNombClie());
+            return eliminado;
+        } else {
+            System.out.println("La cola está vacía");
+            return null;
+        } 
     }
-    
+        
     public String imprimir(){
     }
     public static void main(String[] args) {
