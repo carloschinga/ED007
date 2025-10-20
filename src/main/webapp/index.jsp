@@ -1,3 +1,4 @@
+<%@page import="dao.PilaCliente"%>
 <%@page import="dao.ListaCliente"%>
 <%@page import="dao.ListaSimpleCliente"%>
 <%@page import="dto.Cliente"%>
@@ -23,6 +24,13 @@
             listadoble.agregar(c1);
             listadoble.agregar(c2);
             out.print(listadoble.imprimir());
+            
+            PilaCliente pila= new  PilaCliente();
+            pila.apilar(c1);
+            pila.apilar(c2);
+            out.print(pila.cima().getNombClie());
+            pila.desapilar();
+            out.print(pila.cima().getNombClie());
         %>
     </body>
 </html>
