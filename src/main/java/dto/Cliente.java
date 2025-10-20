@@ -9,6 +9,10 @@ public class Cliente {
     private String apmaClie;
     private String nombClie;
     private double pesoClie;
+
+    public Cliente(String nombClie) {
+        this.nombClie = nombClie;
+    }
     private double tallClie;
     private Date fechNaciClie;
 

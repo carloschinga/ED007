@@ -9,11 +9,9 @@
     <body>
         <h1>Hello World!</h1>
         <%
-            Cliente c1= new Cliente();
-            c1.setNombClie("Carlos");
+            Cliente c1= new Cliente("Carlos");
+            Cliente c2= new Cliente("Juan");
             
-            Cliente c2= new Cliente();
-            c1.setNombClie("Carlos");
             
         %>
     </body>
