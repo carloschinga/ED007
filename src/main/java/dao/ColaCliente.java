@@ -1,5 +1,5 @@
 package dao;
-
+/*"Hola chinga"*/
 import dto.Cliente;
 import java.util.LinkedList;
 import java.util.Queue;
