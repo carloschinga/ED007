@@ -12,6 +12,16 @@ public class Cliente {
     private double tallClie;
     private Date fechNaciClie;
 
+    public Cliente(int codiClie, String appaClie, String apmaClie, String nombClie, double pesoClie, double tallClie, Date fechNaciClie, Nodo sig) {
+        this.codiClie = codiClie;
+        this.appaClie = appaClie;
+        this.apmaClie = apmaClie;
+        this.nombClie = nombClie;
+        this.pesoClie = pesoClie;
+        this.tallClie = tallClie;
+        this.fechNaciClie = fechNaciClie;
+    }
+
     public Cliente(int codiClie, String appaClie, String apmaClie, String nombClie, double pesoClie, double tallClie, Date fechNaciClie) {
         this.codiClie = codiClie;
         this.appaClie = appaClie;
@@ -81,6 +91,7 @@ public class Cliente {
         this.fechNaciClie = fechNaciClie;
     }
 
+     
     @Override
     public String toString() {
         return "Cliente{"
