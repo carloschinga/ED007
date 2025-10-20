@@ -12,4 +12,13 @@ private int apuntador=-1;
         lista.add(c);    
         apuntador=lista.size()-1;
     }
+    
+    public String imprimir() {
+    String resultado = "";
+    for (Cliente c : lista) {
+        resultado += c.getNombClie() + "\n";
+    }
+    return resultado;
+}
+
 }
