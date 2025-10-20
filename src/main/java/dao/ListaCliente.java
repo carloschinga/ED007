@@ -42,10 +42,10 @@ public class ListaCliente {
         Cliente c1= new Cliente();
         c1.setNombClie("Carlos");
         Cliente c2= new Cliente();
-        c1.setNombClie("Juan");
+        c2.setNombClie("Juan");
         ListaCliente l= new ListaCliente();
         l.agregar(c1);
         l.agregar(c2);
-        l.imprimir();
+        System.out.println(l.imprimir());
     }
 }
