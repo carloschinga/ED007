@@ -2,8 +2,8 @@ package dto;
 
 import java.util.Date;
 
-
 public class Cliente {
+
     private int codiClie;
     private String appaClie;
     private String apmaClie;
@@ -22,8 +22,6 @@ public class Cliente {
         this.fechNaciClie = fechNaciClie;
     }
 
-    
-    
     public Cliente() {
     }
 
@@ -82,7 +80,17 @@ public class Cliente {
     public void setFechNaciClie(Date fechNaciClie) {
         this.fechNaciClie = fechNaciClie;
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "Cliente{"
+                + "codigo='" + getCodiClie() + '\''
+                + ", apellido paterno='" + getAppaClie() + '\''
+                + ", apellido materno='" + getApmaClie() + '\''
+                + "nombre" + getNombClie() + '\''
+                + "peso" + getPesoClie() + '\''
+                + " "
+                +'}';
+    }
+
 }

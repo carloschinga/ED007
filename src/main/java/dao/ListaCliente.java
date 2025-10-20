@@ -30,8 +30,17 @@ public class ListaCliente {
         //return lista.
         return null;
     }
-    public Cliente anterior(){
+    
+    public Cliente anterior() {
+        if (apuntador >= 0) {
+            apuntador--;
+            return lista.get(apuntador);
+        } else{
+            System.out.println("Llegaste al inicio de la lista.");
+            return lista.get(apuntador);
+        }
     }
+    
     public String imprimir(){
         String resultado="";
         for (Cliente cliente : lista) {
