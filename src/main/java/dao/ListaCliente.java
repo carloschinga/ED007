@@ -54,11 +54,16 @@ public class ListaCliente {
         c1.setNombClie("Carlos");
         Cliente c2= new Cliente();
         c2.setNombClie("Juan");
+        Cliente c3= new Cliente();
+        c3.setNombClie("Luis");
+        
         ListaCliente l= new ListaCliente();
         l.agregar(c1);
         l.agregar(c2);
+        l.agregar(c3);
         System.out.println(l.imprimir());
-        l.ultimo();
+        //l.ultimo();
         Cliente cx=l.anterior();
+        System.out.println(cx.getNombClie());
     }
 }
