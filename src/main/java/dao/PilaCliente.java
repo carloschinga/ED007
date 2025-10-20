@@ -21,6 +21,12 @@ public class PilaCliente {
         System.out.println("Se apilo el cliente: " + c.getNombClie());
     }
     
+    public Cliente desapilar(){
+        Cliente c=pilaCliente.pop();
+        System.out.println("Se desapiló: "+c.getNombClie());
+        return c;
+    }
+    
     public Cliente cima(){
       Cliente cima = pilaCliente.peek(); 
       System.out.println("La cima es: " + cima.getNombClie()); 
@@ -39,6 +45,8 @@ public class PilaCliente {
         pila.apilar(c1);
         pila.apilar(c2);
         pila.cima();
+        
+        pila.desapilar();
     }
     
 }
